@@ -50,7 +50,7 @@ import requests
 if ingredients_list:
   ingredients_string = ''
 
-  for ingredient_chosen in ingredients_list:
+  for fruit_chosen in ingredients_list:
     ingredients_list += fruit_chosen + ' '
     st.subheader(fruit_chosen + ' Nutrition Information')
     smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/" + fruit_chosen)  
