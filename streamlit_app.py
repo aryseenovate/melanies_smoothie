@@ -48,10 +48,10 @@ if ingredient_list :
 
 import requests  
 if ingredients_list:
-  ingredient_string = ''
+  ingredients_string = ''
 
   for ingredient_chosen in ingredients_list:
-    ingredients_list += ingredient_chosen + ' '
+    ingredients_list += fruit_chosen + ' '
     st.subheader(fruit_chosen + ' Nutrition Information')
     smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/" + fruit_chosen)  
     #st.text(smoothiefroot_response.json())
